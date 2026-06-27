@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify – Web Player</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="option">
+            <div class="lib-option nav-option">
+              <img src="./assets/library_icon.png" alt="" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <div class="box-p1">Create your first playlist</div>
+              <div class="box-p2">It's easy, we'll help you</div>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box">
+              <div class="box-p1">Let's find some podcasts to follow</div>
+              <div class="box-p2">We'll keep you updated on new episodes</div>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="arrow">
+            <span class="material-symbols-outlined"> arrow_back_ios_new </span>
+            <span class="material-symbols-outlined hide">
+              arrow_forward_ios
+            </span>
+          </div>
+          <div class="badge-sticky">
+            <button class="badge hide">Explore Premium</button>
+            <button class="badge dark-badge">
+              <i class="fa-regular fa-circle-down"> </i>Install App
+            </button>
+            <a href="https://ankitrajmaurya.vercel.app/" target="_blank"><i class="fa-regular fa-user"></i></a>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Recently Played</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img
+                src="./assets/card1img.jpeg"
+                alt="card-one"
+                class="card-img"
+              />
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">
+                Your daily updates of the most played tracks...
+              </p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Artists">
+          <h2>Popular Artists</h2>
+          <div class="Artists-container">
+            <div class="Artists-card">
+              <img
+                src="./assets/pawan_singh.jpg"
+                alt="card-one"
+                class="Artists-img"
+              />
+              <p class="Artists-title">Pawan Singh</p>
+              <p class="Artists-info">Artist</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="Artists-card">
+              <img
+                src="./assets/kheshari.jpg"
+                alt="card-one"
+                class="Artists-img"
+              />
+              <p class="Artists-title">Khesari Lal Yadav</p>
+              <p class="Artists-info">Artist</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="Artists-card">
+              <img
+                src="./assets/honey.jpg"
+                alt="card-one"
+                class="Artists-img"
+              />
+              <p class="Artists-title">Yo Yo Honey Singh</p>
+              <p class="Artists-info">Artist</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="Artists-card">
+              <img src="./assets/udit.jpg" alt="card-one" class="Artists-img" />
+              <p class="Artists-title">Udit Narayan</p>
+              <p class="Artists-info">Artist</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <h2>Trending now near you</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img
+                src="./assets/card2img.jpeg"
+                alt="card-one"
+                class="card-img"
+              />
+              <p class="card-title">Mahiye Jinna...</p>
+              <p class="card-info">
+                Your daily updates of the most played tracks...
+              </p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="./assets/card3img.jpeg"
+                alt="card-one"
+                class="card-img"
+              />
+              <p class="card-title">MERE PAAS TUM...</p>
+              <p class="card-info">
+                Your daily updates of the most played tracks...
+              </p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="./assets/card4img.jpeg"
+                alt="card-one"
+                class="card-img"
+              />
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">
+                Your daily updates of the most played tracks...
+              </p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="./assets/card5img.jpeg"
+                alt="card-one"
+                class="card-img"
+              />
+              <p class="card-title">Top 50 - Global</p>
+              <p class="card-info">
+                Your daily updates of the most played tracks...
+              </p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h2>Popular albums and singles</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./assets/lofi3.jpg" alt="card-one" class="card-img" />
+              <p class="card-title">Sorry Sorry - LOFI</p>
+              <p class="card-info">By Bhojpuri Lover...</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/lofi1.webp" alt="card-one" class="card-img" />
+              <p class="card-title">Sukoon Vibe-LOFI</p>
+              <p class="card-info">By Feel Magical Vibes</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/lofi2.jpg" alt="card-one" class="card-img" />
+              <p class="card-title">Romantic-LOFI</p>
+              <p class="card-info">By THE PLAYLIST HUB</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/lofi4.jpg" alt="card-one" class="card-img" />
+              <p class="card-title">LO-FI Beats</p>
+              <p class="card-info">By Various Artists</p>
+              <div class="greenbutton">
+                <div><i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <hr class="footer-line" />
+          <p class="copyright">
+            Made with <span class="heart">&hearts;</span> by
+            <a
+              href="https://ankitrajmaurya.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ankit Raj Maurya
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="music-player" id="music-player">
+        <div class="music" id="current-track">
+          <img src="./assets/card1img.jpeg" alt="Album cover" />
+          <div class="track-info" id="track-info">
+            <span class="now-playing">Now playing</span>
+            <p class="track-title">Top 50 - Global</p>
+            <p class="track-artist">Spotify · Daily Mix</p>
+          </div>
+          <div class="track-actions" id="track-actions">
+            <button class="icon-btn action-btn" id="btn-like">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="icon-btn action-btn" id="btn-more">
+              <i class="fa-solid fa-ellipsis"></i>
+            </button>
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-btn">
+            <i class="fa-solid fa-shuffle player-icon"></i>
+
+            <i class="fa-solid fa-backward-step player-icon"></i>
+
+            <button id="play"><i class="fa-solid fa-play play-btn"></i></button>
+
+            <i class="fa-solid fa-forward-step player-icon"></i>
+
+            <i class="fa-solid fa-repeat player-icon"></i>
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">0:12</span>
+
+            <input
+              type="range"
+              class="player-progress"
+              value="35"
+              min="0"
+              max="100"
+            />
+
+            <span class="tot-time">3:45</span>
+          </div>
+        </div>
+
+        <div class="controls" id="player-actions">
+          <button class="icon-btn subtle action-btn" id="btn-queue">
+            <i class="fa-solid fa-list-ul"></i>
+          </button>
+          <button class="icon-btn subtle action-btn" id="btn-mic">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <button class="icon-btn subtle action-btn" id="btn-device">
+            <i class="fa-solid fa-laptop"></i>
+          </button>
+          <div class="volume" id="volume-control">
+            <i class="fa-solid fa-volume-high"></i>
+
+            <input
+              type="range"
+              class="vol-progress"
+              value="35"
+              min="0"
+              max="100"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
