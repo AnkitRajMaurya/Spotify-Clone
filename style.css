@@ -160,6 +160,7 @@ a {
   z-index: 99;
 }
 .sticky-nav .arrow {
+  display: flex;
   margin-left: 0.75rem;
 }
 .badge-sticky {
@@ -513,4 +514,109 @@ span {
 .player-progress:hover::-moz-range-thumb,
 .vol-progress:hover::-moz-range-thumb {
   transform: scale(1.2);
+}
+
+/* ===========================
+   By Me
+=========================== */
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .cards-container,
+  .Artists-container {
+    justify-content: space-evenly;
+  }
+
+  .card,
+  .Artists-card {
+    width: 150px;
+    margin: 10px;
+  }
+
+  .sticky-nav {
+    padding: 1rem;
+  }
+
+  .badge-sticky {
+    gap: 0.5rem;
+  }
+
+  .player-progress {
+    width: 180px;
+  }
+
+  .now-playing,
+  #btn-more,
+  .fa-shuffle,
+  .fa-backward-step,
+  .fa-forward-step,
+  .fa-repeat,
+  .playback-bar span,
+  .controls,
+  fa-solid {
+    display: none;
+  }
+}
+
+body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+  .cards {
+    padding: 0 0.5rem;
+  }
+
+  .Artists {
+    padding: 0 0.5rem;
+  }
+
+  .card,
+  .Artists-card {
+    width: 140px;
+    margin: 8px;
+  }
+
+  .player-progress {
+    width: 120px;
+  }
+
+  .vol-progress {
+    width: 60px;
+  }
+
+  .track-info {
+    display: none;
+  }
+
+  .track-actions {
+    display: none;
+  }
+
+  .controls {
+    gap: 0.5rem;
+  }
+
+  .sticky-nav img {
+    width: 25px;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.8rem;
+  }
 }
